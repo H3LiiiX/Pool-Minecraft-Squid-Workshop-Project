@@ -1,0 +1,8 @@
+execute if entity @s[tag=swPool_poolplay] unless entity @e[tag=swPool_pooltable,tag=swPool_endgame,limit=1] run return run function pool:custom/end_game_early
+execute if entity @a[tag=swPool_poolplay] unless entity @e[tag=swPool_pooltable,tag=swPool_endgame,limit=1] run tellraw @a[distance=..10] {"text":"A game is already in progress!","color":"red"}
+execute if entity @a[tag=swPool_poolplay] unless entity @e[tag=swPool_pooltable,tag=swPool_endgame,limit=1] run return 0
+tag @a[tag=!swPool_CN] add swPool_EN
+function pool:classes/lobby/terminate_helper
+tag @a[distance=..10,limit=2,sort=nearest] add swPool_wait_cn8ball
+execute as @p at @s run function pool:classes/cn8ball/start_helper
+execute as @a[tag=swPool_poolplay] run function app:get/pool/cuestick_helper

@@ -1,0 +1,2 @@
+execute if entity @s[nbt={OnGround:1b,SelectedItem:{id:"minecraft:bow",components:{"minecraft:custom_data":{swPool_cuestick:1b}}}}] at @s run effect give @s slowness 1 3 true
+scoreboard players reset @s swPool_sneaktime

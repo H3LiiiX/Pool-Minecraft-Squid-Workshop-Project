@@ -1,0 +1,15 @@
+
+kill @e[tag=swPool_aim_pkt]
+kill @e[tag=swPool_aim_obj]
+kill @e[tag=swPool_aim_obj_d0]
+kill @e[tag=swPool_aim_obj_rand]
+kill @e[tag=swPool_shooter]
+#execute at @e[tag=swPool_aim_obj,tag=!swPool_pkt_blocked] run particle minecraft:end_rod ~ ~1 ~ 0 0 0 0 1 force
+
+tag @e[tag=swPool_tmp_legal] remove swPool_tmp_legal
+
+
+
+scoreboard players reset #muteall swPool_C
+scoreboard players reset #botthinking swPool_C
+
