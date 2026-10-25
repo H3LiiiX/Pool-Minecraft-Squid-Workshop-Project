@@ -1,3 +1,6 @@
+# players may only adjust their shot through /trigger (see trigger_player_allowed); operators tagged swPool_op may use every value. Other buttons run /function, which only operators can use
+execute unless entity @s[tag=swPool_op] unless function pool:classes/main/trigger_player_allowed run return run function pool:classes/main/trigger_denied
+
 execute if score @s swPool__trigger matches 1 run function app:help/pool/commandwindow
 
 execute unless data storage minecraft:swpool whitelist if score @s swPool__trigger matches 1141 run function app:unload/pool

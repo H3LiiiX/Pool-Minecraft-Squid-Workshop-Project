@@ -14,4 +14,4 @@ execute unless data storage minecraft:swpool {version:[1210]} as @e[tag=swPool_p
 # 1.21plus version=1210
 execute if data storage minecraft:swpool {version:[1210]} as @e[tag=swPool_pool] at @s run data modify entity @e[tag=swPool_tmprender,limit=1,sort=nearest] item set from entity @s item
 execute if data storage minecraft:swpool {version:[1210]} as @e[tag=swPool_pool] at @s run data modify entity @e[tag=swPool_tmprender,limit=1,sort=nearest] transformation set from entity @s transformation
-execute if data storage minecraft:swpool {version:[1210]} as @e[tag=swPool_pool] at @s run data merge entity @s {item:{id:"minecraft:air",count:1}}
+execute if data storage minecraft:swpool {version:[1210]} as @e[tag=swPool_pool] at @s run data remove entity @s item
