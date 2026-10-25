@@ -1,2 +1,2 @@
-gamerule maxCommandChainLength 999999999
-execute if score #fastfwd swMath_V matches 1 run gamerule maxCommandChainLength 999999999
+# macro line: only parsed when run, so the gamerule name that this game version lacks fails quietly instead of at load
+$gamerule maxCommandChainLength $(value)

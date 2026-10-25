@@ -48,5 +48,5 @@ tellraw @s[tag=swPool_CN] [{"text":"➇ ","color":"yellow"},{"text":"游玩后"}
 tellraw @s[tag=swPool_CN] [{"text":"➇ ","color":"white"},{"text":"    最后一杆不能撤回， 这是有意设计。"}]
 tellraw @s[tag=swPool_CN] [{"text":"➇ ","color":"white"},{"text":"    如果你要离开这片区域， 可以移除球桌，避免留下大量实体。"}]
 
-tellraw @s[tag=swPool_EN] [{"text":"➇ ","color":"white"},{"underlined":true,"color":"white","text":"<Back>","click_event":{"action":"run_command","command":"/trigger swPool__trigger set 1121801"}}]
-tellraw @s[tag=swPool_CN] [{"text":"➇ ","color":"white"},{"underlined":true,"color":"white","text":"<返回>","click_event":{"action":"run_command","command":"/trigger swPool__trigger set 1121801"}}]
+tellraw @s[tag=swPool_EN] [{"text":"➇ ","color":"white"},{"underlined":true,"color":"white","text":"<Back>","click_event":{"action":"run_command","command":"/function app:help/pool/settings/_help"}}]
+tellraw @s[tag=swPool_CN] [{"text":"➇ ","color":"white"},{"underlined":true,"color":"white","text":"<返回>","click_event":{"action":"run_command","command":"/function app:help/pool/settings/_help"}}]
